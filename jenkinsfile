@@ -13,7 +13,7 @@ pipeline {
         environment{
                scannerHome = tool 'sonar-scanner'
           }
-	  agent { slave1}
+	  agent { label 'slave1' }
         steps { 
           withSonarQubeEnv('sonarqube') {
             sh "${scannerHome}/bin/sonar-scanner"     
