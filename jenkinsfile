@@ -32,7 +32,7 @@ pipeline {
 			echo "The Quality Gate Check failed !!"
 		}
 		success {
-		           echo "The Quality Gate Check failed !!"
+		           echo "The Quality Gate Check Successful !!"
 		}
 		
       }   
