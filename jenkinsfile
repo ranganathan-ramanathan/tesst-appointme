@@ -34,6 +34,9 @@ pipeline {
 		success {
 		           echo "The Quality Gate Check Successful !!"
 		}
+		regression {
+		       echo "The QGate regression step....."
+		       }
 		
       }   
   	
