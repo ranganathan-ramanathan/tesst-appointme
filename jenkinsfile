@@ -9,8 +9,9 @@ pipeline {
 		
 	      }
     stages {
-      agent { label 'slave1' }
+      
       stage('SonarQube analysis') {
+      agent { label 'slave1' }
         environment{
                scannerHome = tool 'sonar-scanner'
           }
